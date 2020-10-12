@@ -8,6 +8,22 @@ Bruhshes est un plugin Bukkit visant à remplacer VoxelSniper (VS) avec un code 
 
 *ShapedBrush*: Brush ayant les paramètres de formes;
 
+## Permissions
+
+`bruhshes.brush` Utiliser la commande Brush.
+
+`bruhshes.presets.global.use` Utiliser les presets globaux.
+
+`bruhshes.presets.global.create` Créer des presets globaux.
+
+`bruhshes.presets.perchad.use` Utiliser les presets personnels.
+
+`bruhshes.presets.perchad.create` Créer des presets personnels.
+
+`bruhshes.worldguard.outside` Utiliser en dehors d'un plot WorldGuard.
+
+`bruhshes.plotsquared.outside` Utiliser en dehors d'un plot PlotSquared.
+
 ## Commandes
 
 ### Brush /brush, /b
