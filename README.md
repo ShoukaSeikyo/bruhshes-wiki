@@ -83,79 +83,12 @@ Les brushes ont la plupart du temps deux modes: normal et reverse.
 
 Le mode normal correspondant à un clic avec la flèche et le mode reverse correspondant à un clic avec la gunpowder.
 
-### ShapedBrush
-Tous les brushes notés comme ShapedBrush auront tous les arguments çi-dessous:
+Tous les brushes notés comme ShapedBrush auront tous les arguments noté dans [Shaped Brush](brushes/ShapedBrush.md)
 
-`shape=` `sphere, cube, cylinder, cone, pyramid`: forme du brush;
+### Liste de brushes
 
-`size=` `<int>`: taille du brush actuel;
-
-`x=` `<int>`: taille du brush sur l'axe des x;
-
-`y=` `<int>`: taille du brush sur l'axe des y;
-
-`z=` `<int>`: taille du brush sur l'axe des z;
-
-`ox=` `<int>`: déaxement du centre sur l'axe des x;
-
-`oy=` `<int>`: déaxement du centre sur l'axe des y;
-
-`oz=` `<int>`: déaxement du centre sur l'axe des z;
-
-`h=` `<int>`: hauteur du brush indépendament de l'axe;
-
-`axis=` `x, y, z`: axe utilisé (par défaut: `y`;)
-
-`direction=` `negative, positive, both`: à décrire.
-
-### Blend `blend` **ShapedBrush**
-Adapté de VS: À décrire
-
-`air=` `true, false`: affecte les blocs considérés comme de l'air;
-
-`liquid=` `true, false`: affecte les blocs considérés comme des liquides.
-
-`/b erode shape=sphere size=10`
-
-### Erode `erode` **ShapedBrush**
-Adapté de VS: À décrire
-
-Les paramètres de ce brush sont essentiellement constitués de presets pour les arguments suivant:
-`ef` `<int>`: À décrire
-
-`ec` `<int>`: À décrire
-
-`ff` `<int>`: À décrire
-
-`fc` `<int>`: À décrire
-
-Les presets disponibles sont les suivants: `melt, random_melt, fill, random_lift, smooth, dig, lift, floatclean`
-
-### Overlay
-
-
-### Voxel
-Adapté de VS: le brush le plus basique qui soit. Place des blocs du matériel choisi sur le terrain lors d'un clic.
-
-`/b voxel shape=sphere size=5 material=minecraft:stone`
-
-### Sequencer
-Le Sequencer est le brush permettant d'exécuter plusieurs brush les uns à la suite des autres. Il peut paraître un peu complexe, mais est très puissant.
-
-Le début d'une séquence se déroule par la commande brush suivi du paramètre `brush=` déterminant le premier brush dans la séquence:
-
-`/b sequencer brush=erode`
-
-Les paramètres du brush seront alors proposés pour l'autocompletion avec l'ajout de deux arguments:
-
-`normal=` `normal, reverse`: mode du brush qui sera utilisé lors du mode normal du sequencer;
-
-`reverse=` `normal, reverse`: mode du brush qui sera utilisé lors du mode reverse du sequencer;
-
-Remettre le pramètre `brush=` ajoute un nouveau brush à la séquence:
-
-`/b sequencer brush=erode melt shape=sphere brush=blend`
-
-Les paramètres du brush blend seront alors proposés avec l'ajout des paramètres `normal=` et `reverse=`
-
-`/b sequencer brush=erode melt shape=sphere brush=blend reverse=normal shape=sphere`
+- [Voxel](brushes/voxel.md)
+- [Blend](brushes/blend.md)
+- [Erode](brushes/erode.md)
+- [Overlay](brushes/overlay.md)
+- [Sequencer](brushes/sequencer.md)
